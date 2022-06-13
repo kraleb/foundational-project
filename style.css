@@ -1,0 +1,30 @@
+* {
+  border: 1px dotted red;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+}
+
+.header ul {
+  display: flex;
+  gap: 8px;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+}
+
+h1 {
+  padding: 0;
+  margin: 0;
+}
+
