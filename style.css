@@ -2,15 +2,50 @@
   border: 1px dotted red;
 }
 
+ /* general type overrides */
+
 ul {
   list-style: none;
   margin: 0;
   padding: 0;
 }
 
+h1 {
+  font-size: 48px;
+  font-weight: bold;
+  padding: 0;
+  margin: 0;
+}
+
+a {
+  text-underline-position: unset;
+  color: white;
+  text-decoration: none;
+}
+
+a:hover {
+  color: magenta;
+}
+
+button {
+  border-radius: 5px;
+  background-color: white;
+}
+
 body {
   display: flex;
   flex-direction: column;
+  margin: 0;
+}
+
+img {
+  border: 3px solid;
+}
+
+/* class + class specific overrides */
+
+.logo {
+  border: none;
 }
 
 .header ul {
@@ -21,10 +56,44 @@ body {
 .header {
   display: flex;
   justify-content: space-between;
+  padding: 8px;
+  background-color:  rgba(50, 75, 200, 0.9);
 }
 
-h1 {
-  padding: 0;
-  margin: 0;
+.header-container {
+  background: radial-gradient(circle at bottom left,rgba(50, 75, 200, 0.8), rgba(50, 75, 200, 1));
+  color: white;
 }
 
+.header-container .summary {
+  padding: 56px 108px;
+  gap: 56px;
+  display: flex;
+}
+
+.header-container .summary .content {
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  gap: 16px;
+}
+
+.header-container .summary .content button {
+  align-self: flex-start;
+  padding: 4px 8px;
+}
+
+.details {
+  text-align: center;
+}
+
+.information-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 32px;
+}
+
+.information {
+  max-width: 300px;
+}
